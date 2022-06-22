@@ -15,16 +15,16 @@
  *
  */
 
-package com.devrel.android.fitactions.widgets
+package com.devrel.android.fitactionschj.widgets
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.text.format.DateFormat
 import android.widget.RemoteViews
-import com.devrel.android.fitactions.R
-import com.devrel.android.fitactions.model.FitActivity
-import com.devrel.android.fitactions.model.FitRepository
-import com.devrel.android.fitactions.observeOnce
+import com.devrel.android.fitactionschj.R
+import com.devrel.android.fitactionschj.model.FitActivity
+import com.devrel.android.fitactionschj.model.FitRepository
+import com.devrel.android.fitactionschj.observeOnce
 import com.google.assistant.appactions.widgets.AppActionsWidgetExtension
 import java.util.*
 import java.util.concurrent.TimeUnit

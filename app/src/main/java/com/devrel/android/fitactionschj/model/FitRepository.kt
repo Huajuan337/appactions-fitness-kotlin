@@ -15,7 +15,7 @@
  *
  */
 
-package com.devrel.android.fitactions.model
+package com.devrel.android.fitactionschj.model
 
 import android.content.Context
 import android.os.Handler

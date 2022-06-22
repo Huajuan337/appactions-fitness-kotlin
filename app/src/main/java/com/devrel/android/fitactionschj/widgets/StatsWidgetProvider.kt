@@ -15,12 +15,12 @@
  *
  */
 
-package com.devrel.android.fitactions.widgets
+package com.devrel.android.fitactionschj.widgets
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
-import com.devrel.android.fitactions.R
+import com.devrel.android.fitactionschj.R
 
 
 /**

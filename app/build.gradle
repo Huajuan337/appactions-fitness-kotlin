@@ -40,7 +40,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "PUT_YOUR_APPLICATION_ID_HERE"
+        applicationId "com.devrel.android.fitactionschj"
         minSdkVersion 25
         targetSdkVersion 31
         versionCode 2

@@ -15,7 +15,7 @@
  *
  */
 
-package com.devrel.android.fitactions
+package com.devrel.android.fitactionschj
 
 /**
  * Static object that defines the different BIIs

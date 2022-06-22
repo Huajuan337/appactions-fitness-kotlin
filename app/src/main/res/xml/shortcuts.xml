@@ -57,8 +57,8 @@
     <capability android:name="actions.intent.START_EXERCISE">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="PUT_YOUR_APPLICATION_ID_HERE"
-            android:targetClass="com.devrel.android.fitactions.FitMainActivity">
+            android:targetPackage="com.devrel.android.fitactionschj"
+            android:targetClass="com.devrel.android.fitactionschj.FitMainActivity">
             <!-- Eg. exercisePlanName = "running" -->
             <parameter
                 android:name="exercise.name"
@@ -106,8 +106,8 @@
     <capability android:name="actions.intent.STOP_EXERCISE">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="PUT_YOUR_APPLICATION_ID_HERE"
-            android:targetClass="com.devrel.android.fitactions.FitMainActivity">
+            android:targetPackage="com.devrel.android.fitactionschj"
+            android:targetClass="com.devrel.android.fitactionschj.FitMainActivity">
             <!-- Eg. name = "Running" -->
             <parameter
                 android:name="exercise.name"
@@ -155,8 +155,8 @@
     <capability android:name="actions.intent.GET_EXERCISE_OBSERVATION">
         <app-widget
             android:identifier="GET_EXERCISE_OBSERVATION"
-            android:targetClass="com.devrel.android.fitactions.widgets.StatsWidgetProvider"
-            android:targetPackage="PUT_YOUR_APPLICATION_ID_HERE">
+            android:targetClass="com.devrel.android.fitactionschj.widgets.StatsWidgetProvider"
+            android:targetPackage="com.devrel.android.fitactionschj">
             <parameter
                 android:name="exerciseObservation.aboutExercise.name"
                 android:key="aboutExerciseName"
@@ -168,7 +168,7 @@
         <intent
             android:identifier="GET_EXERCISE_OBSERVATION_FALLBACK"
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.devrel.android.fitactions.widgets.StatsWidgetProvider">
+            android:targetClass="com.devrel.android.fitactionschj.widgets.StatsWidgetProvider">
         </intent>
     </capability>
 </shortcuts>

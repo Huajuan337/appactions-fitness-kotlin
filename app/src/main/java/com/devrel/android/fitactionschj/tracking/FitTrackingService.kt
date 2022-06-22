@@ -15,11 +15,12 @@
  *
  */
 
-package com.devrel.android.fitactions.tracking
+package com.devrel.android.fitactionschj.tracking
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
+import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.app.Service
 import android.content.Context
 import android.content.Intent
@@ -28,10 +29,10 @@ import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.Observer
-import com.devrel.android.fitactions.FitMainActivity
-import com.devrel.android.fitactions.R
-import com.devrel.android.fitactions.model.FitActivity
-import com.devrel.android.fitactions.model.FitRepository
+import com.devrel.android.fitactionschj.FitMainActivity
+import com.devrel.android.fitactionschj.R
+import com.devrel.android.fitactionschj.model.FitActivity
+import com.devrel.android.fitactionschj.model.FitRepository
 
 /**
  * Foreground Android Service that starts an activity and keep tracks of the status showing
@@ -54,7 +55,7 @@ class FitTrackingService : Service() {
      */
     private val notificationBuilder: NotificationCompat.Builder by lazy {
         val pendingIntent = Intent(this, FitMainActivity::class.java).let { notificationIntent ->
-            PendingIntent.getActivity(this, 0, notificationIntent, 0)
+            PendingIntent.getActivity(this, 0, notificationIntent, FLAG_IMMUTABLE)
         }
         NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle(getText(R.string.tracking_notification_title))

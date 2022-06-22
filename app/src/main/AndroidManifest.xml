@@ -16,7 +16,7 @@
     -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.devrel.android.fitactions">
+    package="com.devrel.android.fitactionschj">
 
     <!-- Needed permission to start the FitTrackingService in foreground mode -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -30,7 +30,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <receiver
-            android:name=".widgets.StatsWidgetProvider"
+            android:name="com.devrel.android.fitactionschj.widgets.StatsWidgetProvider"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -40,7 +40,7 @@
                 android:resource="@xml/stats_widget" />
         </receiver>
         <service
-            android:name=".widgets.StatsWidgetProvider"
+            android:name="com.devrel.android.fitactionschj.widgets.StatsWidgetProvider"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -50,7 +50,7 @@
         </service>
 
         <activity
-            android:name=".FitMainActivity"
+            android:name="com.devrel.android.fitactionschj.FitMainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -84,7 +84,7 @@
         </activity>
 
         <service
-            android:name=".tracking.FitTrackingService"
+            android:name="com.devrel.android.fitactionschj.tracking.FitTrackingService"
             android:enabled="true"
             android:exported="true" />
 

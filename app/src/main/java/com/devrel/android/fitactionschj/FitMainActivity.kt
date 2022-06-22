@@ -15,7 +15,7 @@
  *
  */
 
-package com.devrel.android.fitactions
+package com.devrel.android.fitactionschj
 
 import android.app.assist.AssistContent
 import android.content.Intent
@@ -23,16 +23,15 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.devrel.android.fitactions.BiiIntents.START_EXERCISE
-import com.devrel.android.fitactions.BiiIntents.STOP_EXERCISE
-import com.devrel.android.fitactions.home.FitStatsFragment
-import com.devrel.android.fitactions.model.FitActivity
-import com.devrel.android.fitactions.model.FitRepository
-import com.devrel.android.fitactions.tracking.FitTrackingFragment
-import com.devrel.android.fitactions.tracking.FitTrackingService
+import com.devrel.android.fitactionschj.BiiIntents.START_EXERCISE
+import com.devrel.android.fitactionschj.BiiIntents.STOP_EXERCISE
+import com.devrel.android.fitactionschj.home.FitStatsFragment
+import com.devrel.android.fitactionschj.model.FitActivity
+import com.devrel.android.fitactionschj.model.FitRepository
+import com.devrel.android.fitactionschj.tracking.FitTrackingFragment
+import com.devrel.android.fitactionschj.tracking.FitTrackingService
 import org.json.JSONObject
 
 /**

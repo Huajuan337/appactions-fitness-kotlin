@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Google LLC
+ * Copyright 2019 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,19 +15,9 @@
  *
  */
 
-package com.devrel.android.fitactions
-
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
+package com.devrel.android.fitactionschj.model
 
 /**
- * Create single use observer for activity LiveData
+ * Entity that contains the total user stats.
  */
-fun <T> LiveData<T>.observeOnce(observer: Observer<T>) {
-    observeForever(object : Observer<T> {
-        override fun onChanged(t: T?) {
-            observer.onChanged(t)
-            removeObserver(this)
-        }
-    })
-}
+data class FitStats(val totalCount: Int, val totalDistanceMeters: Double, val totalDurationMs: Long)
